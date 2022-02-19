@@ -1,5 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">ActivityLifeCycleApp</string>
     <string name="activitya_title">Activity A</string>
     <string name="activitya_openactivityb_btn">Start Activity B</string>
 </resources>
