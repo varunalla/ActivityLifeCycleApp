@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
 
 import com.example.activitylifecycleapp.helpers.CounterHelper;
 
@@ -21,7 +22,8 @@ public class ActivityA extends AppCompatActivity {
         else
             System.out.println("Fresh Launch");
         Log.e("onCreate ------ ", "ActivityA: onCreate()");
-
+        TextView counter_txtView = findViewById(R.id.txtv_counter);
+        counter_txtView.setText(""+(CounterHelper.getRestartACounter()+CounterHelper.getRestartBCounter()+CounterHelper.getRestartCCounter()));
     }
     public void btn_openActivityB(View view){
         Intent activityB=new Intent(this,ActivityB.class);
@@ -34,7 +36,9 @@ public class ActivityA extends AppCompatActivity {
         Intent activityC=new Intent(this,ActivityC.class);
         startActivity(activityC);
     }
-
+    public void btn_closeApp(View view) {
+        finishAndRemoveTask();
+    }
     @Override
     protected void onStart() {
         super.onStart();
@@ -45,6 +49,8 @@ public class ActivityA extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
+        TextView counter_txtView = findViewById(R.id.txtv_counter);
+        counter_txtView.setText(""+(CounterHelper.getRestartACounter()+CounterHelper.getRestartBCounter()+CounterHelper.getRestartCCounter()));
         Log.e("onResume ------ ","ActivityA: onResume()");
     }
 
@@ -66,6 +72,8 @@ public class ActivityA extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        //clear counters on destruction of app
+        CounterHelper.clearACounter();
         Log.e("onDestroy ------ ","ActivityA: onDestroy()");
     }
 
@@ -73,7 +81,7 @@ public class ActivityA extends AppCompatActivity {
     @Override
     protected void onRestart() {
         super.onRestart();
-        CounterHelper.incrementCounter();
+        CounterHelper.incrementACounter();
         Log.e("onRestart ------ ","ActivityA: onRestart()");
     }
 }

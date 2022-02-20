@@ -1,18 +1,34 @@
 package com.example.activitylifecycleapp.helpers;
 
 public class CounterHelper {
-    private static  int restartCounter;
+    private static  int restartACounter;
     private static int restartBCounter;
-    public static int incrementCounter(){
-        return ++restartCounter;
+    private static int restartCCounter;
+    public static void clearACounter(){
+        restartACounter=0;
     }
-    public static  int getRestartCounter(){
-        return restartCounter;
+    public static void clearBCounter(){
+        restartBCounter=0;
+    }
+    public static void clearCCounter(){
+        restartCCounter=0;
+    }
+    public static int incrementACounter(){
+        return ++restartACounter;
+    }
+    public static  int getRestartACounter(){
+        return restartACounter;
     }
     public static int incrementBCounter(){
-        return ++restartCounter;
+        return ++restartBCounter;
     }
     public static  int getRestartBCounter(){
-        return restartCounter;
+        return restartBCounter;
+    }
+    public static int incrementCCounter(){
+        return ++restartCCounter;
+    }
+    public static  int getRestartCCounter(){
+        return restartCCounter;
     }
 }

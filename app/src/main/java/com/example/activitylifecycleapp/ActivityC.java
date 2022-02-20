@@ -58,7 +58,7 @@ public class ActivityC extends AppCompatActivity {
     @Override
     protected void onRestart() {
         super.onRestart();
-        CounterHelper.incrementCounter();
+        CounterHelper.incrementCCounter();
         Log.e("onRestart ------ ","ActivityC: onRestart()");
     }
 }

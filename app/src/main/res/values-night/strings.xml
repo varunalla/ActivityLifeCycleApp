@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">ActivityLifeCycleApp</string>
-
+    <string name="close_app_btn">Close App</string>
     <!--Activity A-->
     <string name="activitya_title">Activity A</string>
     <string name="activitya_openactivityb_btn">Start Activity B</string>
     <string name="activitya_openactivityc_btn">Start Activity C</string>
+
+    <string name="counterlabel">Restart counter across activities</string>
     <!--Activity B-->
     <string name="activityb_title">Activity B</string>
     <string name="stop_btn_activityb">Stop Activity B</string>
     <!--Activity C-->
-    <string name="activityc_title">Activity C Simple Dialog</string>
+    <string name="activityc_title">Simple Dialog</string>
     <string name="stop_btn_activityc">Close</string>
 </resources>

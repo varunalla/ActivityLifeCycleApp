@@ -23,21 +23,55 @@
         android:id="@+id/btn_start_activityb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="118dp"
         android:onClick="btn_openActivityB"
         android:text="@string/activitya_openactivityb_btn"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/txtv_counter_label" />
 
     <Button
         android:id="@+id/btn_start_activityb2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="232dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="118dp"
         android:onClick="btn_openActivityC"
         android:text="@string/activitya_openactivityc_btn"
+        app:layout_constraintStart_toEndOf="@+id/btn_start_activityb"
+        app:layout_constraintTop_toBottomOf="@+id/txtv_counter_label" />
+
+    <Button
+        android:id="@+id/btn_closeApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="147dp"
+        android:onClick="btn_closeApp"
+        android:text="@string/close_app_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_start_activityb" />
+
+    <TextView
+        android:id="@+id/txtv_counter_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="31dp"
+        android:text="@string/counterlabel"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/txtv_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="173dp"
+        android:layout_marginTop="43dp"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtv_counter_label" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

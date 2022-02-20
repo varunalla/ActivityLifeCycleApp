@@ -66,7 +66,6 @@ public class ActivityB extends AppCompatActivity {
     @Override
     protected void onRestart() {
         super.onRestart();
-        CounterHelper.incrementCounter();
         CounterHelper.incrementBCounter();
         Log.e("onRestart ------ ","ActivityB: onRestart()");
     }
