@@ -6,4 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".ActivityB">
 
+    <Button
+        android:id="@+id/btpStopActivityB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="458dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="225dp"
+        android:text="@string/stop_btn_activityb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textv_activityb_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="174dp"
+        android:layout_marginTop="111dp"
+        android:layout_marginEnd="179dp"
+        android:layout_marginBottom="328dp"
+        android:text="@string/activityb_title"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btpStopActivityB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

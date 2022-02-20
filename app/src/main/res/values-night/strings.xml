@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">ActivityLifeCycleApp</string>
+
+    <!--Activity A-->
     <string name="activitya_title">Activity A</string>
     <string name="activitya_openactivityb_btn">Start Activity B</string>
+    <string name="activitya_openactivityc_btn">Start Activity C</string>
+    <!--Activity B-->
+    <string name="activityb_title">Activity B</string>
+    <string name="stop_btn_activityb">Stop Activity B</string>
+    <!--Activity C-->
+    <string name="activityc_title">Activity C</string>
+    <string name="stop_btn_activityc">Close</string>
 </resources>
