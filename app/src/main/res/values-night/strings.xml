@@ -10,6 +10,6 @@
     <string name="activityb_title">Activity B</string>
     <string name="stop_btn_activityb">Stop Activity B</string>
     <!--Activity C-->
-    <string name="activityc_title">Activity C</string>
+    <string name="activityc_title">Activity C Simple Dialog</string>
     <string name="stop_btn_activityc">Close</string>
 </resources>

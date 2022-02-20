@@ -11,7 +11,10 @@
         android:theme="@style/Theme.ActivityLifeCycleApp">
         <activity
             android:name=".ActivityC"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/AppDialogTheme"
+            android:excludeFromRecents="true"
+            />
         <activity
             android:name=".ActivityB"
             android:exported="false" />
